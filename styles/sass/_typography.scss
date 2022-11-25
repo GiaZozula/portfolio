@@ -1,6 +1,62 @@
 @use "variables";
 
+// import fonts
+@font-face {
+    font-family: 'Nunito';
+    src: url("../assets/fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url("../assets/fonts/PTSans-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url("../assets/fonts/PTSans-Refular.ttf");
+    font-weight: normal;
+}
+
 // global font styles
 html {
     font-size: 125%;
+}
+
+body {
+    font-family: variables.$font2;
+    font-size: 1rem;
+    color: variables.$colour1;
+    font-weight: normal;
+    // some resets
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+h1, h2, h4 {
+    font-family: variables.$font1;
+    color: variables.$colour1;
+}
+
+h1 {
+    font-size: .8rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1.15rem;
+}
+
+h4 {
+    font-size: .75rem;
+}
+
+h5 {
+    font-size: .75rem;
+    font-weight: bold;
 }

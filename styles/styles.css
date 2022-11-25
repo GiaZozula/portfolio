@@ -226,8 +226,59 @@ html {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/fonts/Nunito-Bold.ttf");
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../assets/fonts/PTSans-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../assets/fonts/PTSans-Refular.ttf");
+  font-weight: normal;
+}
 html {
   font-size: 125%;
+}
+
+body {
+  font-family: "PT Sans";
+  font-size: 1rem;
+  color: #2A3033;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+h1, h2, h4 {
+  font-family: "Nunito";
+  color: #2A3033;
+}
+
+h1 {
+  font-size: 0.8rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+h4 {
+  font-size: 0.75rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+  font-weight: bold;
 }
 
 .wrapper {
