@@ -4,9 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gia Zozula</title>
+    <title>gia zozula</title>
 </head>
-<body>
-    <h1>Gia Zozula</h1>
+<body class="home">
+    <!-- NavBar -->
+    <nav class="navBar">
+        <a href="#home" class="logo">
+            <h1 class="logo">gz</h1>    
+        </a>
+        <ul class="navBarItems">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><button><a href="#email">get in touch</a></button></li>
+        </ul>
+    </nav>
+    <!-- Header -->
+    <header class="wrapper">
+        <h2>gia zozula</h2>
+        <h3>web developer + designer</h3>
+    </header>
+    <!-- Main -->
+    <main class="wrapper">
+        <section class="about" id="about">
+            <img src="#" alt="">
+            <h2>about me</h2>
+        </section>
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div>
+                <h2>skills</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quae!</p>
+            </div>
+            <ul>
+                <li>HTML/li>
+                <li>CSS</li>
+                <li>Sass</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Firebase</li>
+                <li>Git and GitHub</li>
+                <li>Netlify</li>
+                <li>Using REST APIs with AJAX</li>
+                <li>Web accessibility</li>
+                <li>Paired Programming</li>
+                <li>Project Management</li>
+            </ul>
+        </section>
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2>projects</h2>
+            <div class="project">
+                <img src="#" alt="project description">
+                <h4>project title</h4>
+                <h5>Html, Css, Javascript, React</h5>
+                <div class="pButtons">
+                    <button><a href="#">view live</a></button>
+                    <button><a href="#">view code</a></button>
+                </div> <!-- end of pButtons -->
+            </div> <!-- end of project -->
+            <div class="project">
+                <img src="#" alt="project description">
+                <h4>project title</h4>
+                <h5>Html, Css, Javascript</h5>]
+                <div class="pButtons">
+                    <button><a href="#">view live</a></button>
+                    <button><a href="#">view code</a></button>
+                </div> <!-- end of pButtons -->          
+            </div> <!-- end of project -->
+            <div class="project">
+                <img src="#" alt="project description">
+                <h4>project title</h4>
+                <h5>Html, Css, Javascript, React, Firebase</h5>
+                <div class="pButtons">
+                    <button><a href="#">view live</a></button>
+                    <button><a href="#">view code</a></button>
+                </div> <!-- end of pButtons -->
+            </div> <!-- end of project -->
+        </section>
+        <!-- Contact/Get in Touch Section -->
+        <section class="contact">
+            <div>
+                <h2>get in touch</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, laboriosam!</p>
+                <div class="icons">
+                    <a href="#linkedIn">
+                        <img src="" alt="">
+                    </a>
+                    <a href="#gitHub">
+                        <img src="" alt="">
+                    </a>
+                    <a href="#socialMedia">
+                        <img src="" alt="">
+                    </a>
+                    <a href="#email">
+                        <img src="" alt="">
+                    </a>
+                </div> <!-- end of icons -->
+            </div> <!-- end of left box of get in touch -->
+            <!-- Form -->
+            <form method="POST" class="contactForm" name="contactForm">
+                <!-- Name -->
+                <label for="name">name</label>
+                <input type="text" name="name" id="name" required="true">
+                <!-- Email Address -->
+                <label for="email">email address</label>
+                <input type="email" name="email" id="email" required="true">
+                <!-- Message -->
+                <label for="message">message</label>                <textarea name="userFeedback" id="message" required="true"cols="30" rows="10" minlength="5" maxlength="200"></textarea>
+                <!-- Submit Button -->
+                <button type="submit">submit</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="wrapper">
+        <p>built with love by gia :)</p>
+    </footer>
 </body>
 </html>
