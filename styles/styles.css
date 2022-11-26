@@ -313,16 +313,21 @@ nav {
 }
 nav h1 {
   margin: 0;
+  position: fixed;
 }
 nav .navItems {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10% 10px 10px;
 }
 nav .navItems li {
   margin-right: 20px;
+}
+nav .get {
+  position: fixed;
+  left: 90%;
 }
 
 header {
