@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: 'PT Sans';
-    src: url("../assets/fonts/PTSans-Refular.ttf");
+    src: url("../assets/fonts/PTSans-Regular.ttf");
     font-weight: normal;
 }
 
@@ -28,11 +28,11 @@ body {
     font-size: 1rem;
     color: variables.$colour1;
     font-weight: normal;
-    // some resets
-    margin: 0;
-    padding: 0;
-    border: 0;
+}
+
+a {
     text-decoration: none;
+    color: inherit;
 }
 
 h1, h2, h4 {

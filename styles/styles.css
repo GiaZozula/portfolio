@@ -237,7 +237,7 @@ html {
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("../assets/fonts/PTSans-Refular.ttf");
+  src: url("../assets/fonts/PTSans-Regular.ttf");
   font-weight: normal;
 }
 html {
@@ -249,10 +249,11 @@ body {
   font-size: 1rem;
   color: #2A3033;
   font-weight: normal;
-  margin: 0;
-  padding: 0;
-  border: 0;
+}
+
+a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1, h2, h4 {
@@ -283,6 +284,80 @@ h5 {
 
 .wrapper {
   max-width: 1260px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
   margin: 0 auto;
+}
+nav h1 {
+  margin: 0;
+}
+nav .navItems {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+}
+nav .navItems li {
+  margin-right: 20px;
+}
+
+header {
+  padding: 40;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }

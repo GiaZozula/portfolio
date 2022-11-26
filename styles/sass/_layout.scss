@@ -1,18 +1,74 @@
 @use "variables";
 
-// General Layout Styles
-
+// General Layout Styles and Resets
 .wrapper {
     max-width: 1260px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
-// .skip-link {
-//     position: absolute;
-//     left: -1000px;
-//     top: 5px;
-//     z-index: 10;
-//     background: white;
-//     color: black;
-// }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: variables.$colour7;
+}
+
+ul {
+    list-style: none;
+}
+
+// Nav Bar
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    h1 {
+        margin: 0;
+    }
+
+    .navItems {
+        margin: 0;
+        display: flex;
+        padding: 10px 10px 10px 10px;
+
+        li {
+            margin-right: 20px;
+        }
+    }
+}
+
+// Header
+header {
+    padding: 40
+}
+
+// About Me
+.about {
+    display: flex;
+}
+
+// Skills
+.skills {
+    display: flex;
+}
+
+// Projects
+.projects {
+
+    .project {
+        display: flex;
+    }
+}
+
+// Contact/Get in touch
+.contact {
+    display: flex;
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+    }
+}
