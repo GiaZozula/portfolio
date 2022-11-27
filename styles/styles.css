@@ -261,11 +261,7 @@ h1, h2, h4 {
   color: #2A3033;
 }
 
-h1 {
-  font-size: 0.8rem;
-}
-
-h2 {
+h1, h2 {
   font-size: 3rem;
 }
 
@@ -283,9 +279,14 @@ h5 {
   font-weight: bold;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 80%;
+  padding-left: 25%;
   margin: 0 auto;
 }
 
@@ -295,7 +296,7 @@ body {
   background-color: #ffffff;
 }
 
-h2 {
+h2, h3 {
   margin: 0 auto;
 }
 
@@ -308,39 +309,27 @@ button {
 }
 
 section {
-  padding: 5% 0 5% 0;
+  padding-block: min(20vh, 10rem);
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 90%;
-  margin: 0 auto;
-}
-nav h1 {
+.sideBar {
   margin: 0;
   position: fixed;
+  padding: 15% 0 0 15%;
+  background-color: #ffffff;
+  height: 100vh;
 }
-nav .navItems {
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 10% 10px 10px;
+.sideBar h1 {
+  margin: -11px auto;
 }
-nav .navItems li {
-  margin-right: 20px;
+.sideBar .jobTitle {
+  padding-left: 34px;
 }
-nav .get {
-  position: fixed;
-  left: 90%;
+.sideBar .navItems {
+  padding: 50px 0 0 214px;
+}
+.sideBar .navItems li {
+  padding-top: 15px;
 }
 
 header {
@@ -361,16 +350,22 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
+.skills .sBox1 {
+  width: 26%;
+}
 .skills .sBox2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 70px;
+  width: 60%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .skills .sBox2 i {
-  font-size: 4rem;
+  font-size: 5rem;
+  padding: 0 60px 0 0;
 }
 
 .projects .project {
@@ -402,4 +397,17 @@ header {
 }
 .contact .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+footer {
+  padding-top: min(10vh, 10rem);
+}
+
+.project img:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }

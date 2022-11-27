@@ -1,1 +1,10 @@
 @use "variables";
+
+.project {
+
+    img:hover {
+        transform: scale(105%);
+        transition: transform .2s ease-in-out;
+    }
+    
+}
