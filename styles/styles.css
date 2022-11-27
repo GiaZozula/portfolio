@@ -256,13 +256,17 @@ a {
   color: inherit;
 }
 
-h1, h2, h4 {
+h1, h2, h4, footer {
   font-family: "Nunito";
   color: #2A3033;
 }
 
-h1, h2 {
+h1 {
   font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 h3 {
@@ -276,6 +280,10 @@ h4 {
 
 h5 {
   font-size: 0.75rem;
+  font-weight: bold;
+}
+
+footer {
   font-weight: bold;
 }
 
@@ -309,7 +317,10 @@ button {
 }
 
 section {
-  padding-block: min(20vh, 10rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-block: 45%;
 }
 
 .sideBar {
@@ -317,7 +328,6 @@ section {
   position: fixed;
   padding: 15% 0 0 15%;
   background-color: #ffffff;
-  height: 100vh;
 }
 .sideBar h1 {
   margin: -11px auto;
@@ -332,24 +342,10 @@ section {
   padding-top: 15px;
 }
 
-header {
-  padding: 40;
-}
-
-.about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.about .aBox1 {
+.hello .aBox1 {
   padding-left: 10%;
 }
 
-.skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .skills .sBox1 {
   width: 26%;
 }
@@ -368,6 +364,12 @@ header {
   padding: 0 60px 0 0;
 }
 
+.projects {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .projects .project {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,9 +381,6 @@ header {
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-bottom: 5%;
 }
 .contact .contactForm {
@@ -400,7 +399,13 @@ header {
 }
 
 footer {
-  padding-top: min(10vh, 10rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 3% 3% 2% 0;
 }
 
 .project img:hover {
