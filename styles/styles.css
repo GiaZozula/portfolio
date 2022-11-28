@@ -372,13 +372,30 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 60%;
+  width: 80%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.skills .sBox2 li {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.skills .sBox2 li p {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
 .skills .sBox2 i {
   font-size: 5rem;
-  padding: 0 60px 0 0;
+}
+.skills .sBox2 .netlify, .skills .sBox2 .p5, .skills .sBox2 .ableton, .skills .sBox2 .keyshot, .skills .sBox2 .zbrush {
+  width: 100px;
 }
 
 .projects {
@@ -436,7 +453,7 @@ footer {
   padding: 0 3% 2% 0;
 }
 
-button:hover {
+.sideBar li:hover, button:hover {
   -webkit-transform: scale(105%);
           transform: scale(105%);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;

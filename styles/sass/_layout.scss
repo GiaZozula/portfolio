@@ -91,13 +91,26 @@ section {
     .sBox2 {
         display: flex;
         flex-wrap: wrap;
-        width: 60%;
+        width: 80%;
         justify-content: space-around;
 
+        li {
+            padding-right: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+
+            p {
+                align-self: center;
+            }
+        }
 
         i {
             font-size: 5rem;
-            padding: 0 60px 0 0;
+        }
+        
+        .netlify, .p5, .ableton, .keyshot, .zbrush {
+            width: 100px;
         }
     }
 }
@@ -127,7 +140,7 @@ section {
     p {
         width: 70%;
     }
-
+    
     .contactForm {
         display: flex;
         flex-direction: column;
