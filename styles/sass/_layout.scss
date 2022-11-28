@@ -8,9 +8,10 @@ html {
 }
 
 // TODO: fix the wrapper so that the width and padding are consolidated for the new layout
-// TODO: style the buttons
 // TODO: fix the image/sidebar issue
 // TODO: media queries
+// TODO: how to center each section when clicked on by the sidebar
+
 .wrapper {
     max-width: 1260px;
     width: 80%;
@@ -83,25 +84,27 @@ section {
 
 // Skills
 .skills {
-
+    display: flex;
+    flex-direction: column;
+    
     .sBox1 {
-        width: 26%;
+        width: 100%;
     }
 
     .sBox2 {
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
-        justify-content: space-around;
+        width: 100%;
+        justify-content: space-evenly;
 
         li {
-            padding-right: 20px;
-            padding-bottom: 20px;
             display: flex;
             flex-direction: column;
+            align-items: center;
 
             p {
                 align-self: center;
+                margin-top: 15px;
             }
         }
 

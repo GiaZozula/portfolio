@@ -328,8 +328,8 @@ button {
   border-radius: 5px;
   -webkit-box-shadow: inset 0px 0px 6px 3px #EFDCFB;
           box-shadow: inset 0px 0px 6px 3px #EFDCFB;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fef8f8), to(#8647AF));
-  background: linear-gradient(#fef8f8, #8647AF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fef8f8), to(#673c85));
+  background: linear-gradient(#fef8f8, #673c85);
   padding: 10px 15px 10px 15px;
 }
 
@@ -363,22 +363,7 @@ section {
   padding-left: 10%;
 }
 
-.skills .sBox1 {
-  width: 26%;
-}
-.skills .sBox2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 80%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.skills .sBox2 li {
-  padding-right: 20px;
-  padding-bottom: 20px;
+.skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,9 +372,36 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.skills .sBox1 {
+  width: 100%;
+}
+.skills .sBox2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.skills .sBox2 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .skills .sBox2 li p {
   -ms-flex-item-align: center;
       align-self: center;
+  margin-top: 15px;
 }
 .skills .sBox2 i {
   font-size: 5rem;
@@ -453,11 +465,19 @@ footer {
   padding: 0 3% 2% 0;
 }
 
-.sideBar li:hover, button:hover {
+button:hover {
   -webkit-transform: scale(105%);
           transform: scale(105%);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.contact i:hover, .sideBar a:hover {
+  color: #f09f96;
+  -webkit-transition: color, -webkit-transform 0.15s ease-in-out;
+  transition: color, -webkit-transform 0.15s ease-in-out;
+  transition: color, transform 0.15s ease-in-out;
+  transition: color, transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
 }
