@@ -231,13 +231,13 @@ html {
   src: url("../assets/fonts/Nunito-Bold.ttf");
 }
 @font-face {
-  font-family: "PT Sans";
-  src: url("../assets/fonts/PTSans-Bold.ttf");
+  font-family: "BV";
+  src: url("../assets/fonts/BeVietnamPro-SemiBold.ttf");
   font-weight: bold;
 }
 @font-face {
-  font-family: "PT Sans";
-  src: url("../assets/fonts/PTSans-Regular.ttf");
+  font-family: "BV";
+  src: url("../assets/fonts/BeVietnamPro-Regular.ttf");
   font-weight: normal;
 }
 html {
@@ -245,9 +245,9 @@ html {
 }
 
 body {
-  font-family: "PT Sans";
+  font-family: "BV";
   font-size: 1rem;
-  color: #2A3033;
+  color: #6e688c;
   font-weight: normal;
 }
 
@@ -258,11 +258,19 @@ a {
 
 h1, h2, h4, footer {
   font-family: "Nunito";
-  color: #2A3033;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.38rem;
+  color: #41a162;
+}
+
+h2 {
+  color: #f09f96;
+}
+
+.jobTitle {
+  color: #6e688c;
 }
 
 h2 {
@@ -275,16 +283,16 @@ h3 {
 }
 
 h4 {
-  font-size: 0.75rem;
+  font-size: 1.15rem;
 }
 
 h5 {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: bold;
 }
 
-footer {
-  font-weight: bold;
+i {
+  font-size: 1.75rem;
 }
 
 html {
@@ -301,11 +309,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #fef8f8;
+  overflow-x: hidden;
 }
 
 h2, h3 {
-  margin: 0 auto;
+  margin: 0 0;
 }
 
 ul {
@@ -314,6 +323,14 @@ ul {
 
 button {
   all: unset;
+  cursor: pointer;
+  color: #fef8f8;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 0px 6px 3px #EFDCFB;
+          box-shadow: inset 0px 0px 6px 3px #EFDCFB;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fef8f8), to(#8647AF));
+  background: linear-gradient(#fef8f8, #8647AF);
+  padding: 10px 15px 10px 15px;
 }
 
 section {
@@ -327,7 +344,7 @@ section {
   margin: 0;
   position: fixed;
   padding: 15% 0 0 15%;
-  background-color: #ffffff;
+  background-color: #fef8f8;
 }
 .sideBar h1 {
   margin: -11px auto;
@@ -370,6 +387,9 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.projects h4 {
+  margin: 0 auto;
+}
 .projects .project {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,6 +403,9 @@ section {
 .contact {
   padding-bottom: 5%;
 }
+.contact p {
+  width: 70%;
+}
 .contact .contactForm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,11 +414,16 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 5%;
-  width: 70%;
+  width: 100%;
 }
-.contact .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+.contact .contactForm label {
+  padding-block: 10px;
+}
+.contact .contactForm button {
+  margin-top: 10px;
+}
+.contact i {
+  padding: 40px 20px 0 0;
 }
 
 footer {
@@ -405,10 +433,10 @@ footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 3% 3% 2% 0;
+  padding: 0 3% 2% 0;
 }
 
-.project img:hover {
+button:hover {
   -webkit-transform: scale(105%);
           transform: scale(105%);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;

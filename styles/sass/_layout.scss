@@ -7,7 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 
-// todo: fix the wrapper so that the width and padding are consolidated for the new layout
+// TODO: fix the wrapper so that the width and padding are consolidated for the new layout
+// TODO: style the buttons
+// TODO: fix the image/sidebar issue
+// TODO: media queries
 .wrapper {
     max-width: 1260px;
     width: 80%;
@@ -18,11 +21,12 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: variables.$colour7;
+    background-color: variables.$snow;
+    overflow-x: hidden;
 }
 
 h2, h3 {
-    margin: 0 auto;
+    margin: 0 0;
 }
 
 ul {
@@ -31,11 +35,16 @@ ul {
 
 button {
     all: unset;
+    cursor: pointer;
+    color: variables.$snow;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 6px 3px variables.$pink;
+    background: linear-gradient(variables.$snow, variables.$purple);
+    padding: 10px 15px 10px 15px;
 }
 
 section {
     display: flex;
-    // align-items: center;
     padding-block: 45%;
 }
 
@@ -45,7 +54,7 @@ section {
     margin: 0;
     position: fixed;
     padding: 15% 0 0 15%;
-    background-color: variables.$colour7;
+    background-color: variables.$snow;
     
     // positionining my name and job title
     h1 {
@@ -67,8 +76,6 @@ section {
 
 // Hello!
 .hello {
-    // display: flex;
-
     .aBox1 {
         padding-left: 10%;
     }
@@ -76,7 +83,6 @@ section {
 
 // Skills
 .skills {
-    // display: flex;
 
     .sBox1 {
         width: 26%;
@@ -100,6 +106,10 @@ section {
 .projects {
     flex-direction: column;
 
+    h4 {
+        margin: 0 auto;
+    }
+
     .project {
         display: flex;
         padding-top: 5%;
@@ -112,27 +122,33 @@ section {
 
 // Contact/Get in touch
 .contact {
-    // display: flex;
     padding-bottom: 5%;
+
+    p {
+        width: 70%;
+    }
 
     .contactForm {
         display: flex;
         flex-direction: column;
-        padding-left: 5%;
-        width: 70%;
-    }
+        width: 100%;
 
-    .material-symbols-outlined {
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
+        label {
+            padding-block: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    }
+    
+    i {
+        padding: 40px 20px 0 0;
     }
 }
 
 footer {
     display: flex;
     justify-content: flex-end;
-    padding: 3% 3% 2% 0;
+    padding: 0 3% 2% 0;
 }
