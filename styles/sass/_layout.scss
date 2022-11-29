@@ -14,9 +14,13 @@ html {
 
 .wrapper {
     max-width: 1260px;
-    // width: 80%;
-    padding-left: 25%;
+    width: 90%;
     margin: 0 auto;
+}
+
+.mainWrapper {
+    padding-left: 40%;
+    // background-color: blue;
 }
 
 body {
@@ -47,52 +51,79 @@ button {
 section {
     display: flex;
     padding: 40% 0 40% 10%;
-
 }
 
 // Empty positioning divs so that the linked id's bring the user to the correct layout on the page
+// for the hello! section
+.hPos {
+    margin-top: -45%;
+
+}
+// for the skills section
 .sPos {
     padding-top: 15%;
 }
-
+//for the projects section
 .pPos {
     margin-top: -30%;
 }
-
+// for the contact section
 .cPos {
     margin-top: -20%;
 }
 
 // Header
-// Side Nav Bar
-.sideBar {
+header {
     position: fixed;
-    padding: 15% 10% 100vh 15%;
+    margin: 0 auto;
     background-color: variables.$snow;
-    // border-right: 2px solid grey;
-    
-    // positionining my name and job title
-    h1 {
-        margin: -11px auto;
-    }
+    height: 100vh;
+    padding: 13rem 4rem;
+    z-index: 2;
 
-    .jobTitle {
-        padding-left: 34px;
-    }
+    // Side Nav Bar
+    .sideBar {
 
-    .navItems {
-        padding: 50px 0 0 214px;
-        
-        li {
-            padding-top: 15px;
+        // positionining my name and job title
+        h1 {
+            margin: -11px auto;
+        }
+
+        .jobTitle {
+            padding-left: 34px;
+        }
+
+        .navItems {
+            padding: 50px 0 0 214px;
+
+            li {
+                padding-top: 15px;
+            }
         }
     }
 }
 
-// Hello!
+// Main
+.imgBox1 {
+    .pic {
+        margin: 0 0;
+        height: 115vh;
+        // adapated this code from stack overflow, was wanting to have the eye within the image remain visible as the browser was resized
+        // https: //stackoverflow.com/questions/15328416/position-by-center-point-rather-than-top-left-point
+        left: 72%;
+        transform: translate(-50%, 0);
+        position: absolute;
+        z-index: 1;
+    }
+}
 
+// Hello! Section
 
-// Skills
+.hello {
+    padding-top: calc(115vh + 80%);
+}
+
+// Skills Section
 .skills {
     display: flex;
     flex-direction: column;
@@ -128,7 +159,7 @@ section {
     }
 }
 
-// Projects
+// Projects Section
 .projects {
     flex-direction: column;
 
@@ -146,7 +177,7 @@ section {
     }
 }
 
-// Contact/Get in touch
+// Contact/Get in touch Section
 .contact {
     padding-bottom: 5%;
 
@@ -173,6 +204,7 @@ section {
     }
 }
 
+// Footer
 footer {
     display: flex;
     justify-content: flex-end;
