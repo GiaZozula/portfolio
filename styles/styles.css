@@ -355,7 +355,6 @@ section {
   position: fixed;
   padding: 15% 10% 100vh 15%;
   background-color: #fef8f8;
-  border-right: 2px solid grey;
 }
 .sideBar h1 {
   margin: -11px auto;
@@ -487,15 +486,4 @@ button:hover {
   transition: color, -webkit-transform 0.15s ease-in-out;
   transition: color, transform 0.15s ease-in-out;
   transition: color, transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
-}
-
-@media (min-width: 800px) {
-  h1 {
-    color: blue;
-  }
-}
-@media (min-width: 1000px) {
-  h1 {
-    color: yellow;
-  }
 }
