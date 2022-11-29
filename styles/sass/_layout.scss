@@ -14,7 +14,7 @@ html {
 
 .wrapper {
     max-width: 1260px;
-    width: 80%;
+    // width: 80%;
     padding-left: 25%;
     margin: 0 auto;
 }
@@ -46,16 +46,30 @@ button {
 
 section {
     display: flex;
-    padding-block: 45%;
+    padding: 40% 0 40% 10%;
+
+}
+
+// Empty positioning divs so that the linked id's bring the user to the correct layout on the page
+.sPos {
+    padding-top: 15%;
+}
+
+.pPos {
+    margin-top: -30%;
+}
+
+.cPos {
+    margin-top: -20%;
 }
 
 // Header
 // Side Nav Bar
 .sideBar {
-    margin: 0;
     position: fixed;
-    padding: 15% 0 0 15%;
+    padding: 15% 10% 100vh 15%;
     background-color: variables.$snow;
+    border-right: 2px solid grey;
     
     // positionining my name and job title
     h1 {
@@ -76,11 +90,7 @@ section {
 }
 
 // Hello!
-.hello {
-    .aBox1 {
-        padding-left: 10%;
-    }
-}
+
 
 // Skills
 .skills {

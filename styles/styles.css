@@ -301,7 +301,6 @@ html {
 
 .wrapper {
   max-width: 1260px;
-  width: 80%;
   padding-left: 25%;
   margin: 0 auto;
 }
@@ -337,14 +336,26 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-block: 45%;
+  padding: 40% 0 40% 10%;
+}
+
+.sPos {
+  padding-top: 15%;
+}
+
+.pPos {
+  margin-top: -30%;
+}
+
+.cPos {
+  margin-top: -20%;
 }
 
 .sideBar {
-  margin: 0;
   position: fixed;
-  padding: 15% 0 0 15%;
+  padding: 15% 10% 100vh 15%;
   background-color: #fef8f8;
+  border-right: 2px solid grey;
 }
 .sideBar h1 {
   margin: -11px auto;
@@ -357,10 +368,6 @@ section {
 }
 .sideBar .navItems li {
   padding-top: 15px;
-}
-
-.hello .aBox1 {
-  padding-left: 10%;
 }
 
 .skills {
@@ -480,4 +487,15 @@ button:hover {
   transition: color, -webkit-transform 0.15s ease-in-out;
   transition: color, transform 0.15s ease-in-out;
   transition: color, transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    color: blue;
+  }
+}
+@media (min-width: 1000px) {
+  h1 {
+    color: yellow;
+  }
 }
