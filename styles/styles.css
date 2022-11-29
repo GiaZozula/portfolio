@@ -505,6 +505,15 @@ button:hover {
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
+button:focus {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
 .contact i:hover, .sideBar a:hover {
   color: #f09f96;
   -webkit-transition: color, -webkit-transform 0.15s ease-in-out;
@@ -513,8 +522,57 @@ button:hover {
   transition: color, transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
 }
 
-@media (min-width: 400px) {
-  h1 {
-    color: yellow;
+.contact i:focus, .sideBar a:focus {
+  color: #f09f96;
+  -webkit-transition: color, -webkit-transform 0.15s ease-in-out;
+  transition: color, -webkit-transform 0.15s ease-in-out;
+  transition: color, transform 0.15s ease-in-out;
+  transition: color, transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+}
+@media (max-width: 800px) {
+  /* all of our styles for TABLET devices will go within this breakpoint */
+}
+@media (max-width: 500px) {
+  header {
+    position: relative;
+    margin: 0 auto;
+    height: 20vh;
+    padding: 3rem 3rem;
+    z-index: 2;
+    width: 100vw;
+  }
+  .sideBar {
+    background-color: #fef8f8;
+  }
+  .sideBar h1 {
+    font-size: 2.63rem;
+  }
+  .sideBar .jobTitle {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .sideBar .navItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 0;
+  }
+  .sideBar .navItems li {
+    padding-top: 5px;
+  }
+  .sideBar .navItems .arrow {
+    display: none;
   }
 }
