@@ -121,6 +121,10 @@ header {
 
 .hello {
     padding-top: calc(115vh + 80%);
+
+    .aBox1 p {
+        line-height: 40px;
+    }
 }
 
 // Skills Section
@@ -173,6 +177,10 @@ header {
 
         .pBox {
             padding-left: 10%;
+        }
+
+        img {
+            width: 350px;
         }
     }
 }

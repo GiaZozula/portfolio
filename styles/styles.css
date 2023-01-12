@@ -287,8 +287,9 @@ h4 {
 }
 
 h5 {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 i {
@@ -393,6 +394,9 @@ header .sideBar .navItems li {
 .hello {
   padding-top: calc(115vh + 80%);
 }
+.hello .aBox1 p {
+  line-height: 40px;
+}
 
 .skills {
   display: -webkit-box;
@@ -458,6 +462,9 @@ header .sideBar .navItems li {
 }
 .projects .project .pBox {
   padding-left: 10%;
+}
+.projects .project img {
+  width: 350px;
 }
 
 .contact {
