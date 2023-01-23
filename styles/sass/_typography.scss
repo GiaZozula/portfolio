@@ -55,15 +55,19 @@ h2 {
 }
 
 h2 {
-    font-size: clamp(1.25rem, 2vw, 2rem);
+    font-size: clamp(1.45rem, 2.5vw, 2rem);
 }
 
 h3, p {
     font-weight: normal;
 }
 
-h4, h3, p {
+h4, h3 {
     font-size: clamp(1rem, 1.35vw, 1.15rem);
+}
+
+p {
+    font-size: clamp(1rem, 1vw, 1.10rem);
 }
 
 h5 {
