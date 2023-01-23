@@ -81,7 +81,7 @@
 @media (max-width: 500px) {
    header {
     width: 100%;
-    height: 20%;
+    height: 200px;
     display: unset;
     
         h1 {
@@ -92,6 +92,10 @@
         .jobTitle {
             font-size: .73rem;
         }
+    }
+
+    .navItems h3 {
+        font-size: .8rem;
     }
     
     header .sideBar .jobTitle {
@@ -110,7 +114,7 @@
     }
 
     section {
-        padding-block: 50%;
+        padding-block: 70%;
     }
 }
 

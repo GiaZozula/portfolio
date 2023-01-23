@@ -347,8 +347,8 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40% 0 40% 10%;
-  margin: 0 auto;
+  padding: 0 0 0 10%;
+  margin: auto;
   vertical-align: middle;
 }
 
@@ -402,6 +402,9 @@ header .sideBar .navItems li {
   height: 125vh;
 }
 
+.hello h2 {
+  padding-top: 30%;
+}
 .hello .aBox1 p {
   line-height: 40px;
 }
@@ -414,6 +417,9 @@ header .sideBar .navItems li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.skills h2 {
+  padding-top: 10%;
 }
 .skills .sBox1 {
   width: 100%;
@@ -457,6 +463,9 @@ header .sideBar .navItems li {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.projects h2 {
+  padding-top: 5%;
+}
 .projects h4 {
   margin: 0 auto;
 }
@@ -476,6 +485,7 @@ header .sideBar .navItems li {
 }
 
 .contact {
+  padding-top: 20%;
   padding-bottom: 5%;
 }
 .contact p {
@@ -628,7 +638,7 @@ button:focus {
 @media (max-width: 500px) {
   header {
     width: 100%;
-    height: 20%;
+    height: 200px;
     display: unset;
   }
   header h1 {
@@ -637,6 +647,9 @@ button:focus {
   }
   header .jobTitle {
     font-size: 0.73rem;
+  }
+  .navItems h3 {
+    font-size: 0.8rem;
   }
   header .sideBar .jobTitle {
     padding-left: 95px;
@@ -654,7 +667,7 @@ button:focus {
     padding: 0 5% 0 5%;
   }
   section {
-    padding-block: 50%;
+    padding-block: 70%;
   }
 }
 @media (prefers-reduced-motion) {

@@ -40,8 +40,8 @@ button {
 
 section {
     display: flex;
-    padding: 40% 0 40% 10%;
-    margin: 0 auto;
+    padding: 0 0 0 10%;
+    margin: auto;
     vertical-align: middle;
 }
 
@@ -107,6 +107,10 @@ header {
 // Hello! Section
 
 .hello {
+    h2 {
+        padding-top: 30%;
+    }
+
     .aBox1 p {
         line-height: 40px;
     }
@@ -117,6 +121,10 @@ header {
     display: flex;
     flex-direction: column;
     
+    h2 {
+        padding-top: 10%;
+    }
+
     .sBox1 {
         width: 100%;
     }
@@ -155,6 +163,10 @@ header {
     display: flex;
     flex-direction: column;
 
+    h2 {
+        padding-top: 5%;
+    }
+
     h4 {
         margin: 0 auto;
     }
@@ -177,6 +189,7 @@ header {
 
 // Contact/Get in touch Section
 .contact {
+    padding-top: 20%;
     padding-bottom: 5%;
 
     p {
