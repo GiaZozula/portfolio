@@ -40,7 +40,7 @@ h1, h2, h4, footer {
 }
 
 h1 {
-    font-size: 3.38rem;
+    font-size: clamp(2.4rem, 4vw, 3.38rem);
     color: variables.$shamrock-green;
 }
 
@@ -50,20 +50,20 @@ h2 {
 }
 
 .jobTitle {
+    font-size: clamp(.77rem, 1.31vw, 1.15rem);
     color: variables.$dark-blue-gray;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: clamp(1.25rem, 2vw, 2rem);
 }
 
-h3 {
-    font-size: 1.15rem;
+h3, p {
     font-weight: normal;
 }
 
-h4 {
-    font-size: 1.15rem;
+h4, h3, p {
+    font-size: clamp(1rem, 1.35vw, 1.15rem);
 }
 
 h5 {
@@ -74,4 +74,8 @@ h5 {
 
 i {
     font-size: 1.75rem;
+}
+
+button, .sBox2 p {
+    font-size: clamp(.8rem, 1.25vw, 1rem);
 }

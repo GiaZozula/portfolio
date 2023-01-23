@@ -261,7 +261,7 @@ h1, h2, h4, footer {
 }
 
 h1 {
-  font-size: 3.38rem;
+  font-size: clamp(2.4rem, 4vw, 3.38rem);
   color: #41a162;
 }
 
@@ -270,20 +270,20 @@ h2 {
 }
 
 .jobTitle {
+  font-size: clamp(0.77rem, 1.31vw, 1.15rem);
   color: #6e688c;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: clamp(1.25rem, 2vw, 2rem);
 }
 
-h3 {
-  font-size: 1.15rem;
+h3, p {
   font-weight: normal;
 }
 
-h4 {
-  font-size: 1.15rem;
+h4, h3, p {
+  font-size: clamp(1rem, 1.35vw, 1.15rem);
 }
 
 h5 {
@@ -296,18 +296,16 @@ i {
   font-size: 1.75rem;
 }
 
+button, .sBox2 p {
+  font-size: clamp(0.8rem, 1.25vw, 1rem);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-.wrapper {
-  max-width: 1260px;
-  width: 90%;
-  margin: 0 auto;
-}
-
 .mainWrapper {
-  padding-left: 40%;
+  padding: 0 5% 0 40%;
 }
 
 body {
@@ -321,6 +319,10 @@ h2, h3 {
   margin: 0 0;
 }
 
+h5, p {
+  margin-block: 5%;
+}
+
 ul {
   list-style: none;
 }
@@ -329,12 +331,12 @@ button {
   all: unset;
   cursor: pointer;
   color: #fef8f8;
-  border-radius: 5px;
+  border-radius: 2%;
   -webkit-box-shadow: inset 0px 0px 6px 3px #EFDCFB;
           box-shadow: inset 0px 0px 6px 3px #EFDCFB;
   background: -webkit-gradient(linear, left top, left bottom, from(#fef8f8), to(#673c85));
   background: linear-gradient(#fef8f8, #673c85);
-  padding: 10px 15px 10px 15px;
+  padding: 2% 3% 2% 3%;
 }
 
 section {
@@ -342,58 +344,59 @@ section {
   display: -ms-flexbox;
   display: flex;
   padding: 40% 0 40% 10%;
+  margin: 0 auto;
 }
 
-.hPos {
-  margin-top: -45%;
+.hidden {
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.sPos {
-  padding-top: 15%;
-}
-
-.pPos {
-  margin-top: -30%;
-}
-
-.cPos {
-  margin-top: -20%;
+.visible {
+  opacity: 1;
 }
 
 header {
   position: fixed;
-  margin: 0 auto;
-  background-color: #fef8f8;
-  height: 100vh;
-  padding: 13rem 4rem;
+  padding: 14% 0 0 14%;
+  width: 43%;
+  height: 100%;
   z-index: 2;
+  background-color: #fef8f8;
 }
 header .sideBar h1 {
-  margin: -11px auto;
+  line-height: 0.9;
+  margin: 0px auto;
 }
 header .sideBar .jobTitle {
   padding-left: 34px;
 }
 header .sideBar .navItems {
-  padding: 50px 0 0 214px;
+  padding: 10% 25% 0 0;
+  position: relative;
+  left: 35%;
 }
 header .sideBar .navItems li {
   padding-top: 15px;
 }
 
-.imgBox1 .pic {
-  margin: 0 0;
-  height: 115vh;
-  left: 72%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+.imgBox1 {
   position: absolute;
-  z-index: 1;
+  left: 75%;
+}
+.imgBox1 .pic {
+  display: block;
+  left: min(72%, 500px);
+  -webkit-transform: translate(-55%, 0);
+          transform: translate(-55%, 0);
+  position: absolute;
 }
 
-.hello {
-  padding-top: calc(115vh + 80%);
+.spacer {
+  height: 125vh;
 }
+
 .hello .aBox1 p {
   line-height: 40px;
 }
@@ -411,15 +414,11 @@ header .sideBar .navItems li {
   width: 100%;
 }
 .skills .sBox2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
 }
 .skills .sBox2 li {
   display: -webkit-box;
@@ -436,16 +435,18 @@ header .sideBar .navItems li {
 .skills .sBox2 li p {
   -ms-flex-item-align: center;
       align-self: center;
-  margin-top: 15px;
 }
 .skills .sBox2 i {
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 6vw, 5rem);
 }
 .skills .sBox2 .netlify, .skills .sBox2 .p5, .skills .sBox2 .ableton, .skills .sBox2 .keyshot, .skills .sBox2 .zbrush {
-  width: 100px;
+  width: clamp(50px, 6vw, 5rem);
 }
 
 .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -460,11 +461,11 @@ header .sideBar .navItems li {
   display: flex;
   padding-top: 5%;
 }
-.projects .project .pBox {
-  padding-left: 10%;
+.projects .project .pBoxImg, .projects .project .pBox {
+  width: 50%;
 }
 .projects .project img {
-  width: 350px;
+  width: 75%;
 }
 
 .contact {
@@ -501,6 +502,9 @@ footer {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 0 3% 2% 0;
+}
+footer p {
+  margin-block: 2%;
 }
 
 button:hover {
@@ -543,43 +547,9 @@ button:focus {
 @media (max-width: 800px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
 }
-@media (max-width: 500px) {
-  header {
-    position: relative;
-    margin: 0 auto;
-    height: 20vh;
-    padding: 3rem 3rem;
-    z-index: 2;
-    width: 100vw;
-  }
-  .sideBar {
-    background-color: #fef8f8;
-  }
-  .sideBar h1 {
-    font-size: 2.63rem;
-  }
-  .sideBar .jobTitle {
-    padding: 10px;
-    font-size: 1rem;
-  }
-  .sideBar .navItems {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: 0 auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    padding: 0;
-  }
-  .sideBar .navItems li {
-    padding-top: 5px;
-  }
-  .sideBar .navItems .arrow {
-    display: none;
+@media (prefers-reduced-motion) {
+  .hidden {
+    -webkit-transition: none;
+    transition: none;
   }
 }
