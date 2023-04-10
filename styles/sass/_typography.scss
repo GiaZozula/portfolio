@@ -77,9 +77,9 @@ h5 {
 }
 
 i {
-    font-size: 1.75rem;
+    font-size: clamp(1.25rem, 1.75vw, 1.5rem);
 }
 
-button, .sBox2 p {
+button, .sBox2 p, footer p {
     font-size: clamp(.8rem, 1.25vw, 1rem);
 }

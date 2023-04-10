@@ -10,12 +10,12 @@ button:focus {
     transition: transform .2s ease-in-out;
 }
 
-.contact i:hover, .sideBar a:hover {
+.icons i:hover, .sideBar a:hover {
     color: variables.$vivid-tangerine;
     transition: color, transform .15s ease-in-out;
 }
 
-.contact i:focus, .sideBar a:focus {
+.icons i:focus, .sideBar a:focus {
     color: variables.$vivid-tangerine;
     transition: color, transform .15s ease-in-out;
 }
