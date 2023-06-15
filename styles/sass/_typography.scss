@@ -83,3 +83,7 @@ i {
 button, .sBox2 p, footer p {
     font-size: clamp(.8rem, 1.25vw, 1rem);
 }
+
+.aBox1 span {
+    color: variables.$shamrock-green;
+}

@@ -304,6 +304,10 @@ button, .sBox2 p, footer p {
   font-size: clamp(0.8rem, 1.25vw, 1rem);
 }
 
+.aBox1 span {
+  color: #41a162;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -553,7 +557,7 @@ button:focus {
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
-.icons i:hover, .sideBar a:hover {
+.icons i:hover, .sideBar a:hover, .aBox1 a:hover {
   color: #f09f96;
   -webkit-transition: color, -webkit-transform 0.15s ease-in-out;
   transition: color, -webkit-transform 0.15s ease-in-out;
