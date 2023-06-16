@@ -555,6 +555,7 @@ footer p {
 
 .hamburger {
   position: fixed;
+  display: none;
   z-index: 100;
   top: 1rem;
   left: 1rem;
@@ -699,6 +700,9 @@ button:focus {
   }
   header .sideBar .navItems {
     display: none;
+  }
+  .hamburger {
+    display: block;
   }
   h1 {
     font-size: 3rem;
