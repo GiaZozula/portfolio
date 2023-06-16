@@ -345,6 +345,7 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#fef8f8), to(#673c85));
   background: linear-gradient(#fef8f8, #673c85);
   padding: 2% 3% 2% 3%;
+  margin-right: 40px;
 }
 
 section {
@@ -539,6 +540,74 @@ footer p {
   margin-block: 2%;
 }
 
+/* MENU POP OUT NAV */
+.menuItem {
+  display: block;
+  font-size: 2rem;
+  color: #6e688c;
+  text-decoration: none;
+  font: "groteskBold";
+}
+
+.menuItem:hover {
+  color: #f09f96;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  left: 1rem;
+  padding: 4px;
+  border: #6e688c solid 2px;
+  border-radius: 20%;
+  background: inherit;
+  cursor: pointer;
+  height: 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.hamburger:hover {
+  background: #f09f96;
+  border: #f09f96 solid 2px;
+}
+
+.menuIcon,
+.closeIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: white;
+  color: black;
+  list-style: none;
+  padding: 6rem;
+  width: 100vw;
+}
+
+.showMenu {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 button:hover {
   -webkit-transform: scale(105%);
           transform: scale(105%);
@@ -622,85 +691,77 @@ button:focus {
     padding: 0;
   }
 }
-@media (max-width: 800px) {
-  h1 {
-    font-size: 2rem;
-  }
+@media (max-width: 810px) {
   header {
+    width: 100%;
+    height: 200px;
+    padding: 5% 0 5% 0;
+  }
+  header .sideBar .navItems {
+    display: none;
+  }
+  h1 {
+    font-size: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 0;
+    margin-right: 15px;
   }
-  .jobTitle {
-    font-size: 0.62rem;
-  }
-  .sBox2 {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-  }
-  .imgBox1 .pic {
-    display: block;
-    left: min(72%, 500px);
-    -webkit-transform: translate(-70%, 0);
-            transform: translate(-70%, 0);
-    position: absolute;
-  }
-}
-@media (max-width: 500px) {
-  header {
-    width: 100%;
-    height: 200px;
-    display: unset;
-  }
-  header .nameTitle {
-    padding-left: 13%;
-  }
-  header h1 {
-    font-size: 2.4rem;
-    padding: 0 0 0 12%;
-  }
-  header .jobTitle {
-    font-size: 0.73rem;
-  }
-  .navItems h3 {
-    font-size: 0.8rem;
-  }
-  header .sideBar .jobTitle {
-    padding-left: 95px;
-  }
-  header .sideBar .navItems {
-    padding: 0;
-    left: 0;
+  h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 15px;
+  }
+  header .sideBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   header .sideBar .icons {
-    position: absolute;
-    top: 90vh;
-    height: 10vh;
-    width: 100vw;
-    padding: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    overflow: hidden;
-    background-color: #fef8f8;
+    padding: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .mainWrapper {
     padding: 0 5% 0 5%;
   }
-  section {
-    padding-block: 70%;
+  .imgBox1 .pic {
+    display: block;
+    left: min(72%, 500px);
+    -webkit-transform: translate(-80%, 0);
+            transform: translate(-80%, 0);
+    position: absolute;
+  }
+  .hello {
+    padding-top: 15%;
+  }
+  .skills {
+    padding-top: 25%;
+  }
+  .projects {
+    padding-top: 30%;
+  }
+  .contact {
+    padding-top: 34%;
+  }
+  footer {
+    margin-top: 10%;
+    margin-bottom: 20%;
   }
 }
 @media (prefers-reduced-motion) {

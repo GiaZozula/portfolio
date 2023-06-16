@@ -36,6 +36,7 @@ button {
     box-shadow: inset 0px 0px 6px 3px variables.$pink;
     background: linear-gradient(variables.$snow, variables.$purple);
     padding: 2% 3% 2% 3%;
+    margin-right: 40px;
 }
 
 section {
@@ -229,4 +230,67 @@ footer {
     p {
         margin-block: 2%;
     }
+}
+
+/* MENU POP OUT NAV */
+
+.menuItem {
+    display: block;
+    font-size: 2rem;
+    color: variables.$dark-blue-gray;
+    text-decoration: none;
+    font: 'groteskBold';
+}
+
+.menuItem:hover {
+    color: variables.$vivid-tangerine;
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    left: 1rem;
+    padding: 4px;
+    border: variables.$dark-blue-gray solid 2px;
+    border-radius: 20%;
+    background: inherit;
+    cursor: pointer;
+    height: 30px;
+    box-shadow: none;
+}
+
+.hamburger:hover {
+    background: variables.$vivid-tangerine;
+    border: variables.$vivid-tangerine solid 2px;
+}
+
+.menuIcon,
+.closeIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.closeIcon {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    transform: translateY(-120%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: white;
+    color: black;
+    list-style: none;
+    padding: 6rem;
+    width: 100vw;
+}
+
+.showMenu {
+    transform: translateY(0);
 }
