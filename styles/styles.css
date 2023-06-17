@@ -369,7 +369,7 @@ section {
 
 header {
   position: fixed;
-  padding: 14% 0 0 14%;
+  padding: 14% 2% 0 14%;
   width: 43%;
   height: 100%;
   z-index: 2;
@@ -597,7 +597,7 @@ footer p {
   right: 0;
   bottom: 0;
   z-index: 99;
-  background: white;
+  background: #fef8f8;
   color: black;
   list-style: none;
   padding: 6rem;
@@ -644,6 +644,9 @@ button:focus {
 }
 
 @media (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     padding-left: 10%;
   }
@@ -664,7 +667,7 @@ button:focus {
     padding-top: 5%;
   }
   .projects .project .pBoxImg {
-    width: 125%;
+    width: 100%;
   }
   .projects .project .pBox {
     width: 100%;
@@ -694,24 +697,30 @@ button:focus {
 }
 @media (max-width: 810px) {
   header {
-    width: 100%;
-    height: 200px;
-    padding: 5% 0 5% 0;
+    width: 100vw;
+    height: 300px;
+    padding: 5%;
+    position: fixed;
   }
   header .sideBar .navItems {
     display: none;
   }
   .hamburger {
     display: block;
+    background-color: #fef8f8;
+    opacity: 1;
+    position: fixed;
+  }
+  .nameTitle {
+    padding-top: 60px;
   }
   h1 {
     font-size: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-right: 15px;
   }
   h3 {
@@ -736,7 +745,7 @@ button:focus {
             justify-content: center;
   }
   header .sideBar .icons {
-    padding: 1rem;
+    padding: 2rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

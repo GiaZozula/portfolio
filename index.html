@@ -19,6 +19,19 @@
     <!-- Header -->
     <header>
         <nav class="sideBar hidden">
+            <!-- hamburger menu -->
+            <ul class="menu">
+                <li><a class="menuItem" href="#hello">hello!</a></li>
+                <li><a class="menuItem" href="#skills">skills</a></li>
+                <li><a class="menuItem" href="#projects">projects</a></li>
+                <li><a class="menuItem" href="#contact">contact</a></li>
+                 <li><a class="menuItem" href="https://www.giazozula.com">creative</a></li>
+                <li><a class="menuItem" href="#top"><span class="material-symbols-outlined arrow">arrow_upward</span></a></li>
+            </ul>
+            <button class="hamburger">
+                <img src="./assets/icons/menu.svg" class="menuIcon">
+                <img src="./assets/icons/cancel.svg" class="closeIcon">
+            </button>
             <div class="nameTitle">
                 <h1><a href="#top">gia zozula</a></h1>  
                 <h3 class="jobTitle">Web Developer + Creative Generalist</h3>
@@ -42,140 +55,129 @@
                     <i class="devicon-github-original"></i>
                 </a>
             </div> <!-- end of icons --> 
-            <!-- hamburger menu -->
-            <ul class="menu">
-                <li><a class="menuItem" href="#hello">hello!</a></li>
-                <li><a class="menuItem" href="#skills">skills</a></li>
-                <li><a class="menuItem" href="#projects">projects</a></li>
-                <li><a class="menuItem" href="#contact">contact</a></li>
-                 <li><a class="menuItem" href="https://www.giazozula.com">creative</a></li>
-                <li><a class="menuItem" href="#top"><span class="material-symbols-outlined arrow">arrow_upward</span></a></li>
-            </ul>
-            <button class="hamburger">
-                <img src="./assets/icons/menu.svg" class="menuIcon">
-                <img src="./assets/icons/cancel.svg" class="closeIcon">
-            </button>
         </nav>
     </header>
     <!-- Main -->
-    <main class="mainWrapper" id="top">
+    <main id="top">
         <div class="imgBox1 hidden">
             <img src="./assets/images/selfie.png" class="pic" alt="portrait">
         </div>
-        <div class="spacer"></div>
-        <section class="hello hidden hPos" id="hello">
-            <div class="aBox1">
-                <h2>hello! <i class="fa-solid fa-hand-peace "></i></h2>
-                <p>I am a <strong>Full-Stack Web Developer</strong> and <strong>Creative Generalist</strong> with a background in <strong>award-winning</strong> digital media production. If you'd like to see my creative work, please visit my <span><strong><a href="https://www.giazozula.com">Creative Portfolio</a></strong></span>!
-            </div> <!-- end of aBox1 -->
-        </section>
-        <div class="spacer"></div>
-        <!-- Skills Section -->
-        <section class="skills hidden sPos" id="skills">
-            <div class="sBox1">
-                <h2>skills</h2>       
-            </div> <!-- end of sBox1 -->
-            <ul class="sBox2">
-                <li class="icons"><i class="devicon-react-original"></i><p>React</p></li>
-                <li class="icons"><i class="devicon-javascript-plain"></i><p>JavaScript</p></li></li>
-                <li class="icons"><i class="devicon-css3-plain"></i><p>CSS</p></li>
-                <li class="icons"><i class="devicon-html5-plain"></i><p>HTML</p></li>
-                <li class="icons"><i class="devicon-nodejs-plain"></i><p>Node.js</p></li>
-                <li class="icons"><i class="devicon-firebase-plain"></i><p>Firebase</p></li>
-                <li class="icons"><img src="./assets/icons/netlify.svg" alt="netlify icon" class="netlify"><p>Netlify</p></li>
-                <li class="icons"><i class="devicon-github-original"></i><p>GitHub</p></li>
-                <li class="icons"><i class="devicon-sass-original"></i><p>Sass</p></li>
-                <li class="icons"><img src="./assets/icons/zbrush.svg" alt="zbrush icon" class="zbrush"><p>ZBrush</p></li>
-                <li class="icons"><img src="./assets/icons/keyshot.svg" alt="keyshot icon" class="keyshot"><p>KeyShot</p></li>
-                <li class="icons"><img src="./assets/icons/ableton.svg" alt="ableton live icon" class="ableton"><p>Ableton</p></li>
-                <li class="icons"><i class="devicon-illustrator-plain"></i><p>Illustrator</p></li>
-                <li class="icons"><i class="devicon-photoshop-plain"></i><p>Photoshop</p></li>
-                <li class="icons"><i class="devicon-premierepro-plain"></i><p>Premiere</p></li>
-                <li class="icons"><i class="devicon-aftereffects-plain"></i><p>AfterEffects</p></li>
-            </ul> 
-        </section>
-        <div class="spacer"></div>
-        <!-- Projects Section -->
-        <section class="projects hidden pPos" id="projects">
-            <h2>projects</h2>
-            <div class="project">
-                <div class="pBoxImg">
-                <img src="./assets/images/wealthwell.png" alt="Screenshot of WealthWell Application">
-                </div>
-                <div class="pBox">
-                    <h4>WealthWell</h4>
-                    <h5>React, Firebase, Javascript, CSS, HTML</h5>
-                    <p>Budgeting app with persistent user access</p>
-                    <div class="pButtons">
-                        <a href="https://wealthwell.netlify.app/"><button>view live</button></a>
-                        <a href="https://github.com/GiaZozula/WealthWell"><button>view code</button></a>
-                    </div> <!-- end of pButtons -->
-                </div> <!-- end of pBox -->
-            </div> <!-- end of project -->
-            <div class="project">
-                <div class="pBoxImg">
-                <img src="./assets/images/pinboardscreen.png" alt="Screenshot of the Pinboard Application">
-                </div>
-                <div class="pBox">
-                    <h4>Happy Notes</h4>
-                    <h5>React, Firebase, Javascript, CSS, HTML</h5>
-                    <p>Notetaking app</p>
-                    <div class="pButtons">
-                        <a href="https://happynotesapp.netlify.app/"><button>view live</button></a>
-                        <a href="https://github.com/GiaZozula/project-three"><button>view code</button></a>
-                    </div> <!-- end of pButtons -->      
-                </div> <!-- end of pBox -->        
-            </div> <!-- end of project -->
-            <div class="project">
-                <div class="pBoxImg">
-                <img src="./assets/images/pokescreen.png" alt="Screenshot of the PokeViewer! website">
-                </div>
-                <div class="pBox">
-                    <h4>PokeViewer!</h4>
-                    <h5>JavaScript, REST API, CSS, SASS, HTML</h5>
-                    <p>Example of using an API</p>
-                    <div class="pButtons">
-                        <a href="https://pokeapiviewer.netlify.app/"><button>view live</button></a>
-                        <a href="https://github.com/projectTwoPokeApi/pokeViewer"><button>view code</button></a>
-                    </div> <!-- end of pButtons -->
-                </div> <!-- end of pBox -->
-            </div> <!-- end of project -->
-            <div class="project">
-                <div class="pBoxImg">
-                <img src="./assets/images/textileescreen.png" alt="Screenshot of the Textilee website">
-                </div>
-                <div class="pBox">
-                    <h4>Textilee Shop</h4>
-                    <h5>CSS, SASS, HTML</h5>
-                    <p>PSD Conversion for a mock textile company</p>
-                    <div class="pButtons">
-                        <a href="https://textileeshop.netlify.app/"><button>view live</button></a>
-                        <a href="https://github.com/GiaZozula/giaBeugelingProjectOne"><button>view code</button></a>
-                    </div> <!-- end of pButtons -->
-                </div> <!-- end of pBox -->
-            </div> <!-- end of project -->
-        </section>
-        <div class="spacer"></div>
-        <!-- Contact/Get in Touch Section -->
-        <section class="contact hidden cPos" id="contact">
-            <div class="cBox">
-                <h2>let's chat!</h2>
-                <p>Looking forward to hearing from you!</p>
-            </div> <!-- end of cBox -->
-            <!-- Form -->
-            <form action="https://formspree.io/f/xbjbevzd" method="POST" class="contactForm" name="contactForm">
-                <!-- Name -->
-                <label for="name">full name</label>
-                <input type="text" name="name" id="name" required="true">
-                <!-- Email Address -->
-                <label for="email">email address</label>
-                <input type="email" name="email" id="email" required="true">
-                <!-- Message -->
-                <label for="message">message</label><textarea name="userFeedback" id="message" required="true"cols="30" rows="10" minlength="5" maxlength="200"></textarea>
-                <!-- Submit Button -->
-                <button type="submit">submit</button>
-            </form>
-        </section>
+        <div class="mainWrapper">
+            <div class="spacer"></div>
+            <section class="hello hidden hPos" id="hello">
+                <div class="aBox1">
+                    <h2>hello! <i class="fa-solid fa-hand-peace "></i></h2>
+                    <p>I am a <strong>Full-Stack Web Developer</strong> and <strong>Creative Generalist</strong> with a background in <strong>award-winning</strong> digital media production. If you'd like to see my creative work, please visit my <span><strong><a href="https://www.giazozula.com">Creative Portfolio</a></strong></span>!
+                </div> <!-- end of aBox1 -->
+            </section>
+            <div class="spacer"></div>
+            <!-- Skills Section -->
+            <section class="skills hidden sPos" id="skills">
+                <div class="sBox1">
+                    <h2>skills</h2>       
+                </div> <!-- end of sBox1 -->
+                <ul class="sBox2">
+                    <li class="icons"><i class="devicon-react-original"></i><p>React</p></li>
+                    <li class="icons"><i class="devicon-javascript-plain"></i><p>JavaScript</p></li></li>
+                    <li class="icons"><i class="devicon-css3-plain"></i><p>CSS</p></li>
+                    <li class="icons"><i class="devicon-html5-plain"></i><p>HTML</p></li>
+                    <li class="icons"><i class="devicon-nodejs-plain"></i><p>Node.js</p></li>
+                    <li class="icons"><i class="devicon-firebase-plain"></i><p>Firebase</p></li>
+                    <li class="icons"><img src="./assets/icons/netlify.svg" alt="netlify icon" class="netlify"><p>Netlify</p></li>
+                    <li class="icons"><i class="devicon-github-original"></i><p>GitHub</p></li>
+                    <li class="icons"><i class="devicon-sass-original"></i><p>Sass</p></li>
+                    <li class="icons"><img src="./assets/icons/zbrush.svg" alt="zbrush icon" class="zbrush"><p>ZBrush</p></li>
+                    <li class="icons"><img src="./assets/icons/keyshot.svg" alt="keyshot icon" class="keyshot"><p>KeyShot</p></li>
+                    <li class="icons"><img src="./assets/icons/ableton.svg" alt="ableton live icon" class="ableton"><p>Ableton</p></li>
+                    <li class="icons"><i class="devicon-illustrator-plain"></i><p>Illustrator</p></li>
+                    <li class="icons"><i class="devicon-photoshop-plain"></i><p>Photoshop</p></li>
+                    <li class="icons"><i class="devicon-premierepro-plain"></i><p>Premiere</p></li>
+                    <li class="icons"><i class="devicon-aftereffects-plain"></i><p>AfterEffects</p></li>
+                </ul> 
+            </section>
+            <div class="spacer"></div>
+            <!-- Projects Section -->
+            <section class="projects hidden pPos" id="projects">
+                <h2>projects</h2>
+                <div class="project">
+                    <div class="pBoxImg">
+                    <img src="./assets/images/wealthwell.png" alt="Screenshot of WealthWell Application">
+                    </div>
+                    <div class="pBox">
+                        <h4>WealthWell</h4>
+                        <h5>React, Firebase, Javascript, CSS, HTML</h5>
+                        <p>Budgeting app with persistent user access</p>
+                        <div class="pButtons">
+                            <a href="https://wealthwell.netlify.app/"><button>view live</button></a>
+                            <a href="https://github.com/GiaZozula/WealthWell"><button>view code</button></a>
+                        </div> <!-- end of pButtons -->
+                    </div> <!-- end of pBox -->
+                </div> <!-- end of project -->
+                <div class="project">
+                    <div class="pBoxImg">
+                    <img src="./assets/images/pinboardscreen.png" alt="Screenshot of the Pinboard Application">
+                    </div>
+                    <div class="pBox">
+                        <h4>Happy Notes</h4>
+                        <h5>React, Firebase, Javascript, CSS, HTML</h5>
+                        <p>Notetaking app</p>
+                        <div class="pButtons">
+                            <a href="https://happynotesapp.netlify.app/"><button>view live</button></a>
+                            <a href="https://github.com/GiaZozula/project-three"><button>view code</button></a>
+                        </div> <!-- end of pButtons -->      
+                    </div> <!-- end of pBox -->        
+                </div> <!-- end of project -->
+                <div class="project">
+                    <div class="pBoxImg">
+                    <img src="./assets/images/pokescreen.png" alt="Screenshot of the PokeViewer! website">
+                    </div>
+                    <div class="pBox">
+                        <h4>PokeViewer!</h4>
+                        <h5>JavaScript, REST API, CSS, SASS, HTML</h5>
+                        <p>Example of using an API</p>
+                        <div class="pButtons">
+                            <a href="https://pokeapiviewer.netlify.app/"><button>view live</button></a>
+                            <a href="https://github.com/projectTwoPokeApi/pokeViewer"><button>view code</button></a>
+                        </div> <!-- end of pButtons -->
+                    </div> <!-- end of pBox -->
+                </div> <!-- end of project -->
+                <div class="project">
+                    <div class="pBoxImg">
+                    <img src="./assets/images/textileescreen.png" alt="Screenshot of the Textilee website">
+                    </div>
+                    <div class="pBox">
+                        <h4>Textilee Shop</h4>
+                        <h5>CSS, SASS, HTML</h5>
+                        <p>PSD Conversion for a mock textile company</p>
+                        <div class="pButtons">
+                            <a href="https://textileeshop.netlify.app/"><button>view live</button></a>
+                            <a href="https://github.com/GiaZozula/giaBeugelingProjectOne"><button>view code</button></a>
+                        </div> <!-- end of pButtons -->
+                    </div> <!-- end of pBox -->
+                </div> <!-- end of project -->
+            </section>
+            <div class="spacer"></div>
+            <!-- Contact/Get in Touch Section -->
+            <section class="contact hidden cPos" id="contact">
+                <div class="cBox">
+                    <h2>let's chat!</h2>
+                    <p>Looking forward to hearing from you!</p>
+                </div> <!-- end of cBox -->
+                <!-- Form -->
+                <form action="https://formspree.io/f/xbjbevzd" method="POST" class="contactForm" name="contactForm">
+                    <!-- Name -->
+                    <label for="name">full name</label>
+                    <input type="text" name="name" id="name" required="true">
+                    <!-- Email Address -->
+                    <label for="email">email address</label>
+                    <input type="email" name="email" id="email" required="true">
+                    <!-- Message -->
+                    <label for="message">message</label><textarea name="userFeedback" id="message" required="true"cols="30" rows="10" minlength="5" maxlength="200"></textarea>
+                    <!-- Submit Button -->
+                    <button type="submit">submit</button>
+                </form>
+            </section>
+        </div>
     </main>
     <!-- Footer -->
     <footer class="mainWrapper">

@@ -1,6 +1,10 @@
 @use "variables";
 
 @media (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+
     header {
         padding-left: 10%;
     }
@@ -23,7 +27,7 @@
     }
 
     .projects .project .pBoxImg {
-    width: 125%;
+    width: 100%;
     }
 
     .projects .project .pBox {
@@ -53,9 +57,10 @@
 @media (max-width: 810px) {
 
     header {
-        width: 100%;
-        height: 200px;
-        padding: 5% 0 5% 0;
+        width: 100vw;
+        height: 300px;
+        padding: 5%;
+        position: fixed;
     }
 
     header .sideBar .navItems {
@@ -64,12 +69,19 @@
 
     .hamburger {
         display: block;
+        background-color: variables.$snow;
+        opacity: 1;
+        position: fixed;
+    }
+    
+    .nameTitle {
+        padding-top: 60px;
     }
 
     h1 {
         font-size: 3rem;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         margin-right: 15px;
     }
 
@@ -86,7 +98,7 @@
     }
 
     header .sideBar .icons {
-        padding: 1rem;
+        padding: 2rem;
         justify-content: center;
     }
 
@@ -123,60 +135,6 @@
     }
     
 }    
-
-// @media (max-width: 500px) {
-//    header {
-//     width: 100%;
-//     height: 200px;
-//     display: unset;
-    
-//         .nameTitle {
-//             padding-left: 13%;
-//         }
-
-//         h1 {
-//             font-size: 2.4rem;
-//             padding: 0 0 0 12%;
-//         }
-
-//         .jobTitle {
-//             font-size: .73rem;
-//         }
-//     }
-
-//     .navItems h3 {
-//         font-size: .8rem;
-//     }
-    
-//     header .sideBar .jobTitle {
-//         padding-left: 95px;
-//     }
-
-//     header .sideBar .navItems {
-//         padding: 0;
-//         left: 0;
-//         display: flex;
-//         justify-content: space-around;
-//     }
-
-//     header .sideBar .icons {
-//         position: absolute;
-//         top: 90vh;
-//         height: 10vh;
-//         width: 100vw;
-//         padding: 0;
-//         align-items: center;
-//         justify-content: space-evenly;
-//         overflow: hidden;
-//         background-color: variables.$snow;
-//     }
-
-//     .mainWrapper {
-//     padding: 0 5% 0 5%;
-//     }
-
-   
-// }
 
 @media (prefers-reduced-motion) {
     .hidden {
