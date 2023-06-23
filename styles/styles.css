@@ -696,9 +696,12 @@ button:focus {
   }
 }
 @media (max-width: 810px) {
+  html {
+    width: 100vw;
+  }
   header {
     width: 100vw;
-    height: 300px;
+    height: 250px;
     padding: 5%;
     position: fixed;
   }
@@ -759,18 +762,19 @@ button:focus {
     -webkit-transform: translate(-80%, 0);
             transform: translate(-80%, 0);
     position: absolute;
+    overflow-x: hidden;
   }
   .hello {
-    padding-top: 15%;
+    padding-top: 55%;
   }
   .skills {
-    padding-top: 25%;
+    padding-top: 65%;
   }
   .projects {
-    padding-top: 30%;
+    padding-top: 70%;
   }
   .contact {
-    padding-top: 34%;
+    padding-top: 74%;
   }
   footer {
     margin-top: 10%;
