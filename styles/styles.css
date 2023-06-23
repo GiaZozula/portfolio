@@ -644,7 +644,7 @@ button:focus {
 }
 
 @media (max-width: 1000px) {
-  body {
+  body, html {
     overflow-x: hidden;
   }
   header {
