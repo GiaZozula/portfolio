@@ -1,4 +1,5 @@
 @use "variables";
+@use "sass:color";
 
 // General Layout Styles and Resets
 html {
@@ -32,11 +33,23 @@ button {
     all: unset;
     cursor: pointer;
     color: variables.$snow;
-    border-radius: 2%;
-    box-shadow: inset 0px 0px 6px 3px variables.$pink;
-    background: linear-gradient(variables.$snow, variables.$purple);
-    padding: 2% 3% 2% 3%;
-    margin-right: 40px;
+    background-color: variables.$shamrock-green;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(65, 161, 98, 0.3);
+    
+    &:hover {
+        background-color: color.scale(variables.$shamrock-green, $lightness: -18%);
+        box-shadow: 0 4px 12px rgba(65, 161, 98, 0.4);
+        transform: translateY(-2px);
+    }
+    
+    &:active {
+        transform: translateY(0);
+    }
 }
 
 section {
@@ -131,39 +144,29 @@ header {
     
     h2 {
         padding-top: 10%;
+        margin-bottom: 5%;
     }
 
-    .sBox1 {
+    .skillsGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
         width: 100%;
     }
 
-    .sBox2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 10px;
-
-        li {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            p {
-                align-self: center;
-            }
+    .skillCategory {
+        h5 {
+            margin-bottom: 10px;
+            color: variables.$vivid-tangerine;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
-        i {
-            font-size: clamp(2.5rem, 6vw, 5rem);
-        }
-        
-        .netlify, .p5, .ableton, .keyshot, .zbrush {
-            width: clamp(50px, 6vw, 5rem);
+        p {
+            margin-top: 5px;
+            line-height: 1.6;
         }
     }
-
-
 }
 
 // Projects Section

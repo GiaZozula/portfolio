@@ -26,8 +26,7 @@ figure {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -45,8 +44,7 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b, strong {
@@ -140,8 +138,7 @@ fieldset {
 }
 
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -159,8 +156,7 @@ textarea {
 }
 
 [type=checkbox], [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -203,13 +199,11 @@ template {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .sr-only {
@@ -220,8 +214,7 @@ html {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -339,18 +332,24 @@ button {
   all: unset;
   cursor: pointer;
   color: #fef8f8;
-  border-radius: 2%;
-  -webkit-box-shadow: inset 0px 0px 6px 3px #EFDCFB;
-          box-shadow: inset 0px 0px 6px 3px #EFDCFB;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fef8f8), to(#673c85));
-  background: linear-gradient(#fef8f8, #673c85);
-  padding: 2% 3% 2% 3%;
-  margin-right: 40px;
+  background-color: #41a162;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(65, 161, 98, 0.3);
+}
+button:hover {
+  background-color: rgb(53.3, 132.02, 80.36);
+  box-shadow: 0 4px 12px rgba(65, 161, 98, 0.4);
+  transform: translateY(-2px);
+}
+button:active {
+  transform: translateY(0);
 }
 
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 0 0 10%;
   margin: auto;
@@ -359,7 +358,6 @@ section {
 
 .hidden {
   opacity: 0;
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
@@ -391,12 +389,8 @@ header .sideBar .navItems li {
   padding-top: 15px;
 }
 header .sideBar .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 30% 25% 0 0;
   gap: 20px;
 }
@@ -408,8 +402,7 @@ header .sideBar .icons {
 .imgBox1 .pic {
   display: block;
   left: min(72%, 500px);
-  -webkit-transform: translate(-55%, 0);
-          transform: translate(-55%, 0);
+  transform: translate(-55%, 0);
   position: absolute;
 }
 
@@ -425,58 +418,33 @@ header .sideBar .icons {
 }
 
 .skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .skills h2 {
   padding-top: 10%;
+  margin-bottom: 5%;
 }
-.skills .sBox1 {
+.skills .skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
   width: 100%;
 }
-.skills .sBox2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 10px;
+.skills .skillCategory h5 {
+  margin-bottom: 10px;
+  color: #f09f96;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.skills .sBox2 li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.skills .sBox2 li p {
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-.skills .sBox2 i {
-  font-size: clamp(2.5rem, 6vw, 5rem);
-}
-.skills .sBox2 .netlify, .skills .sBox2 .p5, .skills .sBox2 .ableton, .skills .sBox2 .keyshot, .skills .sBox2 .zbrush {
-  width: clamp(50px, 6vw, 5rem);
+.skills .skillCategory p {
+  margin-top: 5px;
+  line-height: 1.6;
 }
 
 .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .projects h2 {
   padding-top: 5%;
@@ -485,8 +453,6 @@ header .sideBar .icons {
   margin: 0 auto;
 }
 .projects .project {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-top: 5%;
 }
@@ -507,13 +473,8 @@ header .sideBar .icons {
   width: 70%;
 }
 .contact .contactForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
 }
 .contact .contactForm label {
@@ -524,15 +485,9 @@ header .sideBar .icons {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   height: 10vh;
   padding: 0 0 4% 0;
 }
@@ -565,8 +520,7 @@ footer p {
   background: inherit;
   cursor: pointer;
   height: 30px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .hamburger:hover {
@@ -586,12 +540,8 @@ footer p {
 
 .menu {
   position: fixed;
-  -webkit-transform: translateY(-120%);
-          transform: translateY(-120%);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
+  transform: translateY(-120%);
   transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
   top: 0;
   left: 0;
   right: 0;
@@ -606,42 +556,27 @@ footer p {
 }
 
 .showMenu {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 button:hover {
-  -webkit-transform: scale(105%);
-          transform: scale(105%);
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
+  transform: scale(105%);
   transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 button:focus {
-  -webkit-transform: scale(105%);
-          transform: scale(105%);
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
+  transform: scale(105%);
   transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 .icons i:hover, .sideBar a:hover, .aBox1 a:hover {
   color: #f09f96;
-  -webkit-transition: color, -webkit-transform 0.15s ease-in-out;
-  transition: color, -webkit-transform 0.15s ease-in-out;
   transition: color, transform 0.15s ease-in-out;
-  transition: color, transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
 }
 
 .icons i:focus, .sideBar a:focus {
   color: #f09f96;
-  -webkit-transition: color, -webkit-transform 0.15s ease-in-out;
-  transition: color, -webkit-transform 0.15s ease-in-out;
   transition: color, transform 0.15s ease-in-out;
-  transition: color, transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
 }
 
 @media (max-width: 1000px) {
@@ -654,15 +589,12 @@ button:focus {
   header .sidebar .navItems {
     padding: 0;
   }
-  .skills .sBox2 {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+  .skills .skillsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   .project {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .project h4 {
     padding-top: 5%;
@@ -677,17 +609,10 @@ button:focus {
     margin-bottom: 15%;
   }
   .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 30px;
     padding-block: 5%;
@@ -720,62 +645,59 @@ button:focus {
   }
   h1 {
     font-size: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin-right: 15px;
   }
   h3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-left: 15px;
   }
   header .sideBar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
   header .sideBar .icons {
     padding: 2rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .mainWrapper {
     padding: 0 5% 0 5%;
   }
+  section {
+    padding: 0;
+    scroll-margin-top: 100px;
+  }
   .imgBox1 .pic {
     display: block;
     left: min(72%, 500px);
-    -webkit-transform: translate(-80%, 0);
-            transform: translate(-80%, 0);
+    transform: translate(-80%, 0);
     position: absolute;
     overflow-x: hidden;
   }
   .hello {
-    padding-top: 55%;
+    padding-top: 20%;
   }
   .skills {
-    padding-top: 65%;
+    padding-top: 40%;
   }
-  .projects {
-    padding-top: 70%;
+  .skills h2 {
+    margin-bottom: 15px;
+  }
+  .skills .skillsGrid {
+    gap: 5px;
+  }
+  .skills .skillCategory h5 {
+    margin-bottom: 3px;
+  }
+  .skills .skillCategory p {
+    margin-top: 0;
+    margin-bottom: 5px;
   }
   .contact {
-    padding-top: 74%;
+    padding-top: 50%;
   }
   footer {
     margin-top: 10%;
@@ -784,7 +706,8 @@ button:focus {
 }
 @media (prefers-reduced-motion) {
   .hidden {
-    -webkit-transition: none;
     transition: none;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
